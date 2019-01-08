@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>M-method</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div id="js-draw" class="col col-7">
+		</div>
+		<div class="col col-1"></div>
+		<div class="col col-4">
+			<div class="table js-points">
+				<div class="table__row">
+					<div class="table__cell text">X</div>
+					<div class="table__cell text">Y</div>
+					<div class="table__cell text">Action</div>
+				</div>
+				<div class="table__row js-get-data">
+					<div class="table__cell">
+						<input class="input" type="number" name="x" value="0">
+					</div>
+					<div class="table__cell">
+						<input class="input" type="number" name="y" value="0">
+					</div>
+					<div class="table__cell">
+						<button class="button js-add text">Add</button>
+					</div>
+				</div>
+			</div>
+			
+			<button class="js-solve button text">Solve</button>
+			<div class="table js-solution" style="display: none;">
+				<div class="table__row">
+					<div class="table__cell text">A</div>
+					<div class="table__cell text">B</div>
+					<div class="table__cell text">E</div>
+				</div>
+				<div class="table__row">
+					<div class="table__cell text js-A"></div>
+					<div class="table__cell text js-B"></div>
+					<div class="table__cell text js-E"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="plotly-latest.min.js"></script>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="components/simplex/index.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
